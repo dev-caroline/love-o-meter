@@ -33,6 +33,7 @@
     <script>
         const guy = document.getElementById('him')
         const girl = document.getElementById('her')
+        const errMsg = document.getElementById('errMsg');
 
         function check(){
             if(guy.value === ''|| girl.value === ''){
@@ -51,7 +52,7 @@
                 }
                 else if(love >= 30 && love < 45){
                 displayLovers.innerHTML = ''
-                displayLovers.innerHTML = `<p>${love}% 😏 <br> "Hmm, there's a spark, but you'll need a blowtorch to ignite this one."<</p>`
+                displayLovers.innerHTML = `<p>${love}% 😏 <br> "Hmm, there's a spark, but you'll need a blowtorch to ignite this one."</p>`
                 refresh()
                 }
                 else if(love >= 45 && love < 70){
